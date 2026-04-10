@@ -53,7 +53,7 @@ const Hub = ({ session, onLogout }) => {
         {session.currentStage > totalStages && (
           <div style={{ marginTop: '50px', textAlign: 'center' }}>
             <button 
-              onClick={() => navigate('/awaken')}
+              onClick={() => navigate('/whitlock')}
               style={{ padding: '15px 30px', backgroundColor: '#b87333', color: '#000', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', letterSpacing: '2px', fontSize: '18px' }}
             >
               FINALIZE REPORT

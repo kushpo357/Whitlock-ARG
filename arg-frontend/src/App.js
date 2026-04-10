@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hub session={session} onLogout={handleLogout} />} />
         <Route path="/round/:n" element={<Round session={session} onProgress={setSession} />} />
-        <Route path="/awaken" element={<Awaken session={session} />} />
+        <Route path="/whitlock" element={<Awaken session={session} />} />
       </Routes>
     </BrowserRouter>
   );
