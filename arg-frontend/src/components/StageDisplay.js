@@ -40,7 +40,7 @@ const StageDisplay = ({ stageContent, theme }) => {
           </div>
         )}
         
-        <div style={{ whiteSpace: 'pre-wrap', marginTop: '20px' }}>{blog.conclusion}</div>
+        <div style={{ whiteSpace: 'pre-wrap', marginTop: '20px' }} dangerouslySetInnerHTML={{ __html: blog.conclusion }} />
       </div>
     </article>
   );

@@ -177,7 +177,7 @@ const Round = ({ session, onProgress }) => {
         </main>
 
         <aside style={{ flex: '1 1 300px', maxWidth: '300px' }}>
-          <div style={{ position: 'sticky', top: '100px' }}>
+          <div className="sidebar-wrapper">
             <div style={{ padding: '20px', border: `1px solid ${theme.border}`, borderRadius: '8px', backgroundColor: theme.navBg }}>
               <div style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: theme.border, marginBottom: '15px', display: 'inline-block' }}>
                 <img src={"/profile_pic.png"} alt="Author" style={{ borderRadius: '50%', width: '100%' }} />
@@ -238,6 +238,18 @@ const Round = ({ session, onProgress }) => {
           transform: rotate(-12deg) translateY(2px);
           font-weight: bold;
           color: #ff3333;
+        }
+        .sidebar-wrapper {
+          position: sticky;
+          top: 100px;
+        }
+        @media (max-width: 900px) {
+          .sidebar-wrapper {
+            position: relative !important;
+            top: auto !important;
+            margin-top: 20px;
+            margin-bottom: 40px;
+          }
         }
       `}</style>
     </div>
