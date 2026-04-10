@@ -77,6 +77,10 @@ const Awaken = ({ session }) => {
         currentLine++;
       } else {
         clearInterval(interval);
+        // Redirect to victory submission form after narrative completes
+        setTimeout(() => {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdEPq0y2p1QHfSAc1Z9UgzV7k3IvKD5Td9eIFzvE1ceX_iZ8g/viewform";
+        }, 3000);
       }
     }, 2000); // 2 second delay between subsequent lines
   };
