@@ -27,7 +27,7 @@ const StageDisplay = ({ stageContent, theme }) => {
       <div style={{ fontSize: '18px', lineHeight: '1.8', color: '#292929', marginBottom: '40px' }}>
         <p style={{ fontStyle: 'italic', color: '#555' }}>{blog.intro}</p>
         
-        <div style={{ whiteSpace: 'pre-wrap', marginTop: '20px' }}>{blog.incidentDetails}</div>
+        <div style={{ whiteSpace: 'pre-wrap', marginTop: '20px' }} dangerouslySetInnerHTML={{ __html: blog.incidentDetails }} />
         
         {blog.timeline && blog.timeline.length > 0 && (
           <div style={{ margin: '30px 0', padding: '20px', borderLeft: `4px solid ${theme.accent}`, backgroundColor: '#f9f9f9', fontSize: '16px' }}>

@@ -204,9 +204,7 @@ const Round = ({ session, onProgress }) => {
         }}>
           <div style={{ maxWidth: '600px', margin: '0 auto' }}>
             <div style={{ fontSize: '12px', color: '#666', marginBottom: '30px' }}>{diaryContent.date}</div>
-            <div style={{ fontSize: '18px', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
-              {diaryContent.content}
-            </div>
+            <div style={{ fontSize: '18px', lineHeight: '1.8', whiteSpace: 'pre-wrap' }} dangerouslySetInnerHTML={{ __html: diaryContent.content }} />
             
             <div style={{ marginTop: '60px', textAlign: 'right' }}>
               <button 
@@ -234,6 +232,12 @@ const Round = ({ session, onProgress }) => {
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        .crooked {
+          display: inline-block;
+          transform: rotate(-12deg) translateY(2px);
+          font-weight: bold;
+          color: #ff3333;
         }
       `}</style>
     </div>
