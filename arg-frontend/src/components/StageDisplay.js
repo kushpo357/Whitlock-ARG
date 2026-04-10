@@ -11,7 +11,7 @@ const StageDisplay = ({ stageContent, theme }) => {
             <img src={"/profile_pic.png"} alt="Author thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
         <div>
-          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>Incident Report</div>
+          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>Richard. W</div>
           <div style={{ fontSize: '14px', color: '#888', display: 'flex', gap: '10px' }}>
             <span>Global Security Monitor</span>
             <span>·</span>

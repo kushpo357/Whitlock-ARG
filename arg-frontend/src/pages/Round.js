@@ -182,7 +182,7 @@ const Round = ({ session, onProgress }) => {
               <div style={{ width: '80px', height: '80px', borderRadius: '50%', backgroundColor: theme.border, marginBottom: '15px', display: 'inline-block' }}>
                 <img src={"/profile_pic.png"} alt="Author" style={{ borderRadius: '50%', width: '100%' }} />
               </div>
-              <h3 style={{ margin: '0 0 10px 0', fontSize: '18px' }}>Admin / Editor</h3>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '18px' }}>Richard. W</h3>
               <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#666', marginBottom: '20px' }}>
                 {theme.bio}
               </p>
