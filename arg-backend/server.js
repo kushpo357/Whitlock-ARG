@@ -221,14 +221,16 @@ app.get('/api/diary/:n', async (req, res) => {
 });
 
 // ==========================================
-// 4. STATIC FRONTEND SERVING FOR HOST TEST
+// 4. STATIC FRONTEND SERVING (local only — skipped on Render)
 // ==========================================
+const fs = require('fs');
 const buildPath = path.join(__dirname, '../arg-frontend/build');
-app.use(express.static(buildPath));
-
-app.use((req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
-});
+if (fs.existsSync(buildPath)) {
+  app.use(express.static(buildPath));
+  app.use((req, res) => {
+    res.sendFile(path.join(buildPath, 'index.html'));
+  });
+}
 
 // ==========================================
 // 5. START THE SERVER
