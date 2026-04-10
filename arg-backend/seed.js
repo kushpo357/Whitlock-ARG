@@ -29,6 +29,9 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
   .then(async () => {
     console.log("Connected to database...");
     
+    await mongoose.connection.collection('teams').deleteMany({});
+    console.log("Wiped all prior team registrations...");
+
     await Stage.deleteMany({});
     console.log("Cleared old stages...");
 
