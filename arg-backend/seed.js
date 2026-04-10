@@ -39,7 +39,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 1, 
         correctAnswer: "savehumanity", 
-        maxSlots: 999,
+        maxSlots: 63,
         blog: {
           title: "Irregularities in User Data Mapping within Academic Record Systems",
           intro: "Recent analysis has revealed inconsistencies in user data mapping across internal academic record systems belonging to EduCore Systems Pvt. Ltd. The issue appears to involve misaligned identifiers and unexpected overlaps in student-linked data clusters.\n\nWhile the system remains operational, anomalies suggest deeper structural irregularities that require investigation.",
@@ -58,7 +58,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 2, 
         correctAnswer: "undefeated", 
-        maxSlots: 999,
+        maxSlots: 50,
         blog: {
           title: "Unauthorized Access to Internal Systems via Social Engineering Vector",
           intro: "A major security breach was identified within Spotify Technologies, resulting in unauthorized access to internal administrative tools and sensitive system controls.\n\nThe incident exposed vulnerabilities not in infrastructure, but in human-facing access points and internal trust mechanisms.",
@@ -77,7 +77,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 3, 
         correctAnswer: "illusion", 
-        maxSlots: 999,
+        maxSlots: 40,
         blog: {
           title: "Coordinated Account Compromise via Internal Access Channels",
           intro: "A coordinated account compromise incident was identified within Instagram Platforms, affecting multiple high-visibility user accounts simultaneously.\n\nThe breach raised concerns regarding centralized access control and internal account management systems.",
@@ -96,7 +96,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 4, 
         correctAnswer: "mirage", 
-        maxSlots: 999,
+        maxSlots: 30,
         blog: {
           title: "Covert Data Extraction through Embedded Media Structures",
           intro: "A data privacy incident was identified involving MetaSphere Analytics, where personal data of thousands of users was collected and processed without explicit awareness.\n\nThe breach primarily affected individuals who had interacted with third-party applications, many of whom were unaware that their data — and in some cases, their connections — were being accessed.",
@@ -115,7 +115,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 5, 
         correctAnswer: "phantom", 
-        maxSlots: 999,
+        maxSlots: 20,
         blog: {
           title: "A major cybersecurity breach was identified involving Sony Pictures Entertainment",
           intro: "A major cybersecurity breach was identified involving Sony Pictures Entertainment, resulting in the unauthorized disclosure of internal data, communications, and media assets.\n\nThe incident remains one of the most significant examples of large-scale corporate data exposure.",
@@ -134,7 +134,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 6, 
         correctAnswer: "whitlock", 
-        maxSlots: 999,
+        maxSlots: 10,
         blog: {
           title: "Temporal Discrepancy Event at DataTrust",
           intro: "A large-scale data breach was reported involving DataTrust Financial Services, affecting millions of user records and exposing sensitive personal information.\n\nThe incident is widely regarded as one of the most significant breaches in recent years, though inconsistencies remain in how the event has been documented.",
@@ -153,7 +153,7 @@ mongoose.connect(process.env.MONGO_URI || "mongodb://127.0.0.1:27017/witlock")
       { 
         stageNumber: 7, 
         correctAnswer: "awaken", 
-        maxSlots: 999,
+        maxSlots: 4,
         blog: {
           title: "System-Wide Inconsistencies and Structural Manipulation",
           intro: "A comprehensive analysis of multiple cybersecurity incidents has revealed recurring inconsistencies across otherwise unrelated events.\n\nThese anomalies, while subtle in isolation, appear consistently across different platforms, timelines, and reports — suggesting the possibility of a broader structural influence on how information is presented.",
